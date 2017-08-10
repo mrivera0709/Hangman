@@ -1,11 +1,12 @@
 body 
 	{
-  background: linear-gradient(to bottom right, #1E0B30, #5F259C); /* Standard syntax (must be last) */
+    background: -webkit-linear-gradient(top left, #1E0B30, #5F259C);
+    background: -o-linear-gradient(top left, #1E0B30, #5F259C);
+    background: linear-gradient(to bottom right, #1E0B30, #5F259C); /* Standard syntax (must be last) */
 	background-attachment: fixed;
 	color:#eee;
 	font-family: 'Raleway', sans-serif;
 	min-width:400px;
-
 	}
 	
 #bar
@@ -32,7 +33,9 @@ body
 	
 #hang-body
 	{
-  background: linear-gradient(to bottom right, #540E00, #FF1900); /* Standard syntax (must be last) */
+    background: -webkit-linear-gradient(top left, #540E00, #FF1900);
+    background: -o-linear-gradient(top left, #540E00, #FF1900);
+    background: linear-gradient(to bottom right, #540E00, #FF1900); /* Standard syntax (must be last) */
 	background-attachment: fixed;
 	color:#eee;
 	font-family: 'Raleway', sans-serif;
@@ -108,7 +111,8 @@ h4
 	text-align:center;
 	min-width:330px;
 	}
-	#construction:hover
+
+#construction:hover
 	{
 	font-family: 'Zilla Slab Highlight', cursive;
 	font-size:3em;

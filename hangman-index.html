@@ -3,6 +3,8 @@
 <head>
 	
 	<title> Hangman </title>
+
+		<link rel = "stylesheet" type = "text/css" href = "assets/reset.css" />
 	
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		
@@ -50,15 +52,12 @@
 				<h4> Press any key to get started! </h4>	
 
 				<p id="progress"> </p>	
-				
-			<p id=wins>  </p>
-			<p id=losses>  </p>
-			<p id=letters>  </p>
-			<p id=guessesRemaining>  </p>
-			<p id=victory>  </p>
-				
-
-				
+				<p id=wins>  </p>
+				<p id=losses>  </p>
+				<p id=letters>  </p>
+				<p id=guessesRemaining>  </p>
+				<p id=victory>  </p>
+								
 			</div>
 			
 			<div class=col-xs-2> </div>
@@ -66,9 +65,11 @@
 		
 		<div class=row>
 			<div class=col-xs-2> </div>
+			
 			<div class=col-xs-8>
 				<footer> Copyright 2017 Misael Rivera </footer>
 			</div>
+			
 			<div class=col-xs-2> </div>
 		</div>
 				    
@@ -109,19 +110,19 @@
 			{
 
 			// Display guesses remaining
-		 		document.querySelector('#guessesRemaining').innerHTML = "Guesses Left: " + guessesRemaining;
+		 	document.querySelector('#guessesRemaining').innerHTML = "Guesses Left: " + guessesRemaining;
 			};
 
 		var updateWord = function()
 			{
-			  this.word = this.words[Math.floor(Math.random() * this.words.length)];
+			this.word = this.words[Math.floor(Math.random() * this.words.length)];
 			 
 			};
 						
 		var updateGuessesSoFar = function()
 			{
 				
-				// Display User guesses
+			// Display User guesses
 	  		document.querySelector('#letters').innerHTML = "Your Guesses So Far: " + guessedLetters.join(' ');
 			};
 		
@@ -131,7 +132,6 @@
 	  		totalGuesses = 7;
 	 		guessesRemaining = 7;
 	  		guessedLetters = [];
-
 	  		updateWord();
 	  		updateGuessesLeft();
 	  		updateGuessesSoFar();
@@ -175,21 +175,18 @@
 						
 				// When there are no guesses remaining: add 1 to losses and display alert	
 		        else if(guessesRemaining == 0)
-		        		{
+		        	{
 		            losses++;
 		            document.querySelector('#losses').innerHTML = "Losses: " + losses;
 		            document.querySelector('#victory').innerHTML = "Thats a loss!!!"
 		            console.log("Losses:" + losses);
 		            
 		            	            
-		            // Reset game because you suck
-		            reset();
-		        		}
+		        // Reset game because you suck
+		        reset();
+		        	}
 	        		
-	        }
-	        								
-
-		
+	        	}
 	
 	</script>
 	
