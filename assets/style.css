@@ -1,0 +1,149 @@
+body 
+	{
+  background: linear-gradient(to bottom right, #1E0B30, #5F259C); /* Standard syntax (must be last) */
+	background-attachment: fixed;
+	color:#eee;
+	font-family: 'Raleway', sans-serif;
+	min-width:400px;
+
+	}
+	
+#bar
+	{
+	padding:5px 0;
+	}
+	
+#bar:hover
+	{
+	background: linear-gradient(to right, #8F250D, #FF1900);
+	padding:5px 0;
+	}
+	
+#bar-hang
+	{
+	padding:5px 0;
+	}
+	
+#bar-hang:hover
+	{
+	background: linear-gradient(to right, #1E0B30, #5F259C);
+	padding:5px 0;
+	}
+	
+#hang-body
+	{
+  background: linear-gradient(to bottom right, #540E00, #FF1900); /* Standard syntax (must be last) */
+	background-attachment: fixed;
+	color:#eee;
+	font-family: 'Raleway', sans-serif;
+	}
+		
+.col-xs-7
+	{
+	margin:0;
+	padding:0;
+	}
+	
+.col-xs-8
+	{
+	margin:0;
+	padding:0;
+	}
+
+h1 
+	{
+	padding:50px 5% 20px 0;
+	font-family: 'Wire One', sans-serif;
+	font-size: 6em;
+	margin:0
+	}
+	
+#hang-h1
+	{
+	padding:50px 5% 20px 0;
+	font-family: 'Raleway', sans-serif;
+	font-size: 4em;
+	margin:0;
+		}
+		
+#game
+	{
+	padding:5px 20px;
+	color:white;
+	border: 1px solid white;
+	background-color:transparent;
+	float:right;
+	border-radius:150px;
+	}
+	
+h3
+	{
+	padding:0 16% 1% 10%;
+	text-align:right;
+	margin:0;
+	font-family: 'Pompiere', cursive;
+	font-weight:light;
+	}
+	
+#victory
+	{
+	font-weight:bolder;
+	font-size:1.75em;
+	padding-top:20px
+	}
+	
+h4
+	{
+	font-weight:bold;
+	font-size:1.5em;
+	padding-bottom:20px;
+	min-width:400px;
+	}
+	
+#construction
+	{
+	font-family: 'Zilla Slab Highlight', cursive;
+	font-size:3em;
+	background-color:black;
+	text-align:center;
+	min-width:330px;
+	}
+	#construction:hover
+	{
+	font-family: 'Zilla Slab Highlight', cursive;
+	font-size:3em;
+	color:red;
+	background-color:black;
+	text-align:center;
+	min-width:330px;
+	}
+	
+#content
+	{
+	width=80%;
+	background: linear-gradient(to bottom right, #fff, #bbb);
+	color:#111;
+	padding:5%;
+	box-shadow: 7px 10px 10px #350365;
+	text-align:center;
+	}
+	
+#contentHang
+	{
+	width=80%;
+	background: linear-gradient(to bottom right, #fff, #bbb);
+	color:#111;
+	padding:5%;
+	box-shadow: 7px 10px 10px #751400;
+	text-align:center;
+	min-width:480px;
+	}
+	
+footer 
+	{
+	padding:2% 0;
+	position:relative;
+	bottom:-20em;
+	font-size:.75em;
+	font-weight:light;
+	}
